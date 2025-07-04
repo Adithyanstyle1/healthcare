@@ -1,0 +1,82 @@
+.specialties-section {
+  padding: 30px 40px;
+  background-color: white;
+}
+
+.specialties-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #1a73e8;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.specialty-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  z-index: 1;
+}
+
+.specialty-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #1a73e8;
+  box-shadow: 0 15px 35px rgba(26, 115, 232, 0.2);
+  background: linear-gradient(135deg, #f4f9ff, #ffffff);
+}
+
+.specialty-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(26, 115, 232, 0.05), transparent 70%);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.specialty-card:hover::before {
+  opacity: 1;
+}
+
+.specialty-icon {
+  font-size: 40px;
+  color: #1a73e8;
+  margin-bottom: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+.specialty-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+  z-index: 2;
+  position: relative;
+}
+
+.specialty-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  z-index: 2;
+  position: relative;
+}

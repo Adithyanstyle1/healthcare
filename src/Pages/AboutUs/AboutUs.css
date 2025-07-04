@@ -1,0 +1,279 @@
+/* Reset and font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.about-us-page {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  padding: 40px 20px;
+}
+
+/* Section: Who We Are */
+/* Shared heading style between 'Who We Are?' and 'Customer Experience' */
+/* Shared heading style between 'Who We Are?' and 'Customer Experience' */
+.section-heading-centered {
+  font-size: 32px;
+  color: #1a73e8;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom:35px;
+  margin-top:1px;
+}
+
+
+/* Adjust .who-we-are content alignment and layout */
+.who-we-are {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.who-we-are:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #1a73e8;
+  background: linear-gradient(135deg, #f4f9ff, #ffffff);
+  box-shadow: 0 15px 35px rgba(26, 115, 232, 0.2);
+}
+
+.who-we-are::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(26, 115, 232, 0.05), transparent 70%);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.who-we-are:hover::before {
+  opacity: 1;
+}
+
+.who-we-are p {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Section: Customer Experience */
+.customer-experience {
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 40px ;
+}
+
+.customer-experience h2 {
+  font-size: 32px;
+  color: #1a73e8;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.experience-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.experience-image img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.experience-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.experience-text p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #333;
+}
+
+
+
+
+
+
+.team-section {
+  padding-bottom:  40px;
+  background-color: whi;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.team-title {
+  font-size: 36px;
+  color: #1a73e8;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.team-subtitle {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.team-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  border-top: 4px solid #1a73e8;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(26, 115, 232, 0.15);
+}
+
+.team-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin: 8px 0 4px;
+}
+
+.team-card h4 {
+  font-size: 16px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+.why-choose-section {
+  padding-bottom:  40px;
+  background-color: white;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.choose-title {
+  font-size: 36px;
+  color: #1a73e8;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.choose-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.choose-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #1a73e8;
+  box-shadow: 0 15px 30px rgba(26, 115, 232, 0.1);
+}
+
+.choose-icon {
+  font-size: 40px;
+  color: #1a73e8;
+  margin-bottom: 15px;
+}
+
+.choose-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.choose-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+.health-banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(135deg, #e3f2fd, #f5faff);
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 10px 25px rgba(26, 115, 232, 0.05);
+  border-radius: 0; /* removed rounded edges for full-width look */
+}
+
+.health-banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.health-banner h2 {
+  font-size: 36px;
+  color: #1a73e8;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.health-banner p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+}
+

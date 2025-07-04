@@ -1,0 +1,98 @@
+/* ConsultNow.css */
+.consult-now-section {
+  padding: 80px 40px;
+  background-color: #f8faff;
+}
+
+.consult-now-container {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.consult-now-container h2 {
+  font-size: 28px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.consult-now-container p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.consult-form input,
+.consult-form select,
+.consult-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.consult-form button {
+  padding: 12px 30px;
+  background: #1a73e8;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.consult-form button:hover {
+  background-color: #155dc0;
+}
+
+/* Base form styles */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Input, Select, and Textarea uniform style */
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* On focus - blue border */
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+}
+
+/* Button style */
+form button {
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+form button:hover {
+  background-color: #0c5bd3;
+}

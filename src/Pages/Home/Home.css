@@ -1,0 +1,61 @@
+/* Hero Section (Home) */
+.hero-section-home {
+  background: url('../Assets/D/Sky.png') no-repeat center center/cover;
+  padding: 180px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+.hero-section-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(10, 92, 255, 0.2), rgba(0, 0, 0, 0.3));
+  z-index: 0;
+}
+
+.hero-section-home h1,
+.hero-section-home p,
+.hero-section-home .hero-cta-home {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section-home h1 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 700;
+
+}
+
+.hero-section-home p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.hero-cta-home {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0a5cff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(10, 92, 255, 0.3);
+}
+
+.hero-cta-home:hover {
+  background-color: #0a5cff;
+  color: #fff;
+  transform: scale(1.05);
+}
