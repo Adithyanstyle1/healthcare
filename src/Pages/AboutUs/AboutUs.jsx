@@ -3,6 +3,10 @@ import './AboutUs.css';
 import aboutImg from '../Assets/about-customer.png'; // Make sure this path is correct
 import { FaClock, FaUserMd, FaShieldAlt, FaBolt } from 'react-icons/fa';
 import Navbar from '../Navbar/Navbar';
+import James from '../Assets/Doctors/Dr. James Bennett.png'
+import Emily from '../Assets/Doctors/Dr. Emily Watson.png'
+import Arul from '../Assets/Doctors/Dr. Arulmozhi R.png'
+import Keethi from '../Assets/Doctors/Dr. Keerthivasan.png'
 
 
 const features = [
@@ -33,25 +37,25 @@ const teamMembers = [
   {
     name: "Dr. Emily Watson",
     role: "Family Medicine Specialist",
-    img: "https://images.pexels.com/photos/8460154/pexels-photo-8460154.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: Emily,
     desc: "Experienced in holistic care and preventive health. Emily brings a compassionate approach to online consultations.",
   },
   {
     name: "Dr. James Bennett",
     role: "Consultant Cardiologist",
-    img: "https://images.pexels.com/photos/8376293/pexels-photo-8376293.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: James,
     desc: "Expert in cardiac care and lifestyle management. Committed to making heart health accessible worldwide.",
   },
   {
     name: "Dr. Arulmozhi R",
     role: "Senior Neurologist",
-    img: "https://images.pexels.com/photos/6749776/pexels-photo-6749776.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: Arul,
     desc: "Focused on neurotherapy and digital diagnostics. Fluent in Tamil and English to serve diverse patients.",
   },
   {
     name: "Dr. Keerthivasan M",
     role: "Consultant Dermatologist",
-    img: "https://images.pexels.com/photos/8376290/pexels-photo-8376290.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: Keethi,
     desc: "Skincare and wellness expert with modern, result-oriented treatments tailored to individual needs.",
   },
 ];

@@ -1,5 +1,11 @@
-/* Reset and font */
+/* Fonts & Base */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .about-us-page {
   font-family: 'Poppins', sans-serif;
@@ -8,20 +14,17 @@
   padding: 40px 20px;
 }
 
-/* Section: Who We Are */
-/* Shared heading style between 'Who We Are?' and 'Customer Experience' */
-/* Shared heading style between 'Who We Are?' and 'Customer Experience' */
+/* Section Headings */
 .section-heading-centered {
   font-size: 32px;
   color: #1a73e8;
   text-align: center;
   font-weight: 700;
-  margin-bottom:35px;
-  margin-top:1px;
+  margin-bottom: 35px;
+  margin-top: 1px;
 }
 
-
-/* Adjust .who-we-are content alignment and layout */
+/* WHO WE ARE */
 .who-we-are {
   max-width: 900px;
   margin: 0 auto 60px auto;
@@ -69,12 +72,11 @@
   z-index: 2;
 }
 
-
-/* Section: Customer Experience */
+/* CUSTOMER EXPERIENCE */
 .customer-experience {
   max-width: 1100px;
   margin: auto;
-  padding-bottom: 40px ;
+  padding-bottom: 40px;
 }
 
 .customer-experience h2 {
@@ -111,14 +113,10 @@
   color: #333;
 }
 
-
-
-
-
-
+/* TEAM SECTION */
 .team-section {
-  padding-bottom:  40px;
-  background-color: whi;
+  padding-bottom: 40px;
+  background-color: white;
   text-align: center;
   font-family: "Segoe UI", sans-serif;
 }
@@ -132,8 +130,6 @@
 
 .team-subtitle {
   margin-bottom: 50px;
-  position: relative;
-  z-index: 2;
   font-size: 17px;
   line-height: 1.9;
   color: #333;
@@ -187,13 +183,9 @@
   line-height: 1.6;
 }
 
-
-
-
-
-
+/* WHY CHOOSE US */
 .why-choose-section {
-  padding-bottom:  40px;
+  padding-bottom: 40px;
   background-color: white;
   text-align: center;
   font-family: "Segoe UI", sans-serif;
@@ -248,20 +240,24 @@
   color: #555;
   line-height: 1.6;
 }
+
+/* HEALTH BANNER FIXED */
 .health-banner {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   background: linear-gradient(135deg, #e3f2fd, #f5faff);
-  padding: 30px 20px;
+  padding: 40px 20px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
   box-shadow: 0 10px 25px rgba(26, 115, 232, 0.05);
-  border-radius: 0; /* removed rounded edges for full-width look */
+  border-radius: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .health-banner-content {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .health-banner h2 {
@@ -277,3 +273,33 @@
   line-height: 1.8;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .section-heading-centered,
+  .customer-experience h2,
+  .team-title,
+  .choose-title,
+  .health-banner h2 {
+    font-size: 26px;
+  }
+
+  .health-banner p,
+  .team-subtitle,
+  .experience-text p {
+    font-size: 16px;
+  }
+
+  .team-card p,
+  .choose-card p {
+    font-size: 13px;
+  }
+
+  .experience-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-text {
+    text-align: center;
+  }
+}
